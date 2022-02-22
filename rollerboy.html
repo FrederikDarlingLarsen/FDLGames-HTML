@@ -2,6 +2,17 @@
 <head>
 <title>FDL Games: Home</title>
 <link rel="stylesheet" href="style.css">
+
+
+<link rel="shortcut icon" href="rollerboyWeb/TemplateData/favicon.ico">
+<!-- <link rel="stylesheet" href="TemplateData/style.css"> -->
+<script src="rollerboyWeb/TemplateData/UnityProgress.js"></script>
+<script src="rollerboyWeb/Build/UnityLoader.js"></script>
+<script>
+  var unityInstance = UnityLoader.instantiate("unityContainer", "rollerboyWeb/Build/rollerboyWeb.json", {onProgress: UnityProgress});
+</script>
+
+
 </head>
 
 <body>
@@ -21,7 +32,9 @@
 <div class="border">
 <h1>RollerBoy</h1>
 
-<p class="center"></p><iframe width="820" height="570" src="rollerboyWeb/game.html"></iframe></p>
+<div class="webgl-content">
+  <div id="unityContainer" style="width: 800px; height: 450px"></div>
+</div>
 
 
 
