@@ -14,7 +14,11 @@ ul {
   
 }
 
-.webgl-content * {border: 0; margin: 0; padding: 0}
+.webgl-content * {
+  border: 0;
+  margin: auto;
+  padding: 0
+}
 
 
 li {
