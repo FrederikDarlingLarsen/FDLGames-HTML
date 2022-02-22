@@ -14,10 +14,11 @@ ul {
   
 }
 
-.webgl-content * {
-  border: 0;
-  margin: auto;
-  padding: 0
+.webgl-content {
+  border: solid 1px #ccc;
+  margin-left: auto;
+  float:center;
+  padding: 0;
 }
 
 
