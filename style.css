@@ -16,7 +16,7 @@ ul {
 
 .webgl-content {
   border: solid 1px #ccc;
-  /* position: relative; */
+  position: relative; 
   width: 100%;
   overflow: hidden;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
