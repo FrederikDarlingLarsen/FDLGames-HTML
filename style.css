@@ -16,7 +16,22 @@ ul {
 
 .webgl-content {
   border: solid 1px #ccc;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
 
+
+.responsive-unity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 
@@ -50,9 +65,6 @@ li a.active {
 .center {
   text-align: center;
 }
-
-
-
 
 hr{
   margin-top: 2%;
@@ -109,7 +121,7 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
-  color: white;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }

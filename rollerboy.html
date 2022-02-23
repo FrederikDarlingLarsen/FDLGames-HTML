@@ -12,12 +12,11 @@
   var unityInstance = UnityLoader.instantiate("unityContainer", "rollerboyWeb/Build/rollerboyWeb.json", {onProgress: UnityProgress});
 </script>
 
-
 </head>
 
 <body>
     <div class="center">
-        <img src="images/fdl.PNG" alt="FDL Games logo"   width="400" height="200">
+        <img src="images/fdl.PNG" alt="FDL Games logo"   width="300" height="150">
         <ul>
           <li><a a href="index.html">Home</a></li>
           <li><a a href="portfolio.html">Portfolio</a></li>
@@ -28,18 +27,18 @@
 
 <hr />
 
-
 <div class="border">
-<h1>RollerBoy</h1>
+<h1>Play RollerBoy Demo</h1>
+
+<p>Below is a demo of the upcoming game "RollerBoy".</p>
+<p>The game window is powered by WebGL which means that your browser must support this.</p>
 
 <div class="webgl-content">
-  <div id="unityContainer" style="width: 100%; height: 62%"></div>
+  <div class="responsive-unity" id="unityContainer" style="width: 100%; height: 62%"></div>
 </div>
 
 <p class="center">&copy FDL Games 2022</p>
 </div>
-
-<!-- <p class="center">&copy FDL Games 2022</p> -->
 
 </body>
 </html>
