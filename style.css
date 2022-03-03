@@ -43,6 +43,11 @@ li {
   
 }
 
+a { 
+ 
+  color: aqua;
+}
+
 li a {
   
   color: white;
@@ -50,6 +55,8 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+
+
 
 li a:hover:not(.active) {
   background-color: rgba(255,255,255,0.4);;
@@ -72,9 +79,12 @@ hr{
   margin-bottom: 2%;
   margin-right: 20%;
   margin-left: 20%;
+  /* border: 0px solid #777; */
+  clear: both;
 }
+
+
 .border {
- 
   margin-top: 1%;
   margin-bottom: 1%;
   margin-right: 22%;
