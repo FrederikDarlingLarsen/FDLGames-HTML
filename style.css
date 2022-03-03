@@ -91,6 +91,7 @@ div.gallery {
   margin-right: 7%;
   margin-left: 7%;
   
+  
 }
 
 div.gallery:hover {
@@ -117,6 +118,7 @@ img.right{
 div.gallery img { 
   width: 100%;
   height: 20%;
+ 
 }
 
 div.desc {
@@ -253,6 +255,8 @@ text-align: left;
   font-size: 28px;
   font-weight: bold;
 }
+
+
 
 .close:hover,
 .close:focus {
