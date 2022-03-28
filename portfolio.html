@@ -3,6 +3,16 @@
 <head>
 <title>FDL Games: Portfolio</title>
 <link rel="stylesheet" href="style.css">
+
+<!-- import JQuery --> -->
+<script type="text/javascript" src="libraries/jquery-3.6.0.min.js"></script> 
+
+<!-- JCarousel stuff --> -->
+<link rel="stylesheet" type="text/css" href="jcarousel.responsive.css"> 
+<script type="text/javascript" src="libraries/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="jcarousel.responsive.js"></script>
+
+
 </head>
 
 <body>
@@ -19,6 +29,7 @@
 <hr />
 
 
+
 <div class="border">
 
 <p>This is my portfolio featuring some of the more interesting projects that i have worked on. When I looked through all of
@@ -30,128 +41,57 @@
 <h1>University projects</h1>
 <p class="center">Here are some of the projects I worked on while studying medialogy at Aalborg University in Copenhagen:</p>
 
-<div class="responsive">
-<div class="gallery">
-  <button class="myBtn">
-      <img src="images/thumbnails/p1_thumb.PNG" alt="chipping into society">
-    
-    <div class="desc">P1: Chipping Into Society</div>
-  </button>
-</div>
-</div>
-
-<div class="responsive">
-<div class="gallery">
-  <button class="myBtn">
-      <img src="images/thumbnails/p2_thumb.png" alt="a brief history of air pollution" width="600" height="400">
-    <div class="desc">P2: A Brief History of Air Pollution</div>
-  </button>
-</div>
-</div>
-
-<div class="responsive">
-<div class="gallery">
-  <button class="myBtn">
-      <img src="images/thumbnails/p3_thumb.PNG" alt="dnd using image processing" width="600" height="400">
-    <div class="desc">P3: D&D Using Image Processing</div>
-  </button>
-</div>
-</div>
-
-<!-- Change this -->
-<p class="invisible">hello</p>
-
-<div class="responsive">
-<div class="gallery">
-  <button class="myBtn">
-      <img src="images/thumbnails/p4_thumb (2).PNG" alt="making a museum alive" width="600" height="400">
-    <div class="desc">P4: Making a Museum Alive</div>
-  </button>
-</div>
-</div>
-
-<div class="responsive">
-<div class="gallery">
-  <button class="myBtn">
-      <img src="images/thumbnails/p5_thumb.PNG" alt="chiseling the story" width="600" height="400">
-    <div class="desc">P5: Adaptive Storytelling</div>
-  </button>
-</div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <button class="myBtn">
-        <img src="images/thumbnails/indy_thumb.png" alt="dwaynedyana jones" width="600" height="400">
+ <div class="wrapper">
      
-      <div class="desc">3D Movie: Dwayedyana Jones</div>
-      </button>
-  </div>
-  </div>
+    <div class="jcarousel-wrapper">
+        <div class="jcarousel">
+            <ul>
+                <li><button class="myBtn"><img src="images/thumbnails/p1_thumb.PNG" alt="Image 1"></button></li>
+                <li><button class="myBtn"><img src="images/thumbnails/p2_thumb.png" alt="Image 1"></button></li>
+                <li><button class="myBtn"><img src="images/thumbnails/p3_thumb.PNG" alt="Image 1"></button></li>
+                <li><button class="myBtn"><img src="images/thumbnails/p4_thumb (2).PNG" alt="Image 1"></button></li>
+                <li><button class="myBtn"><img src="images/thumbnails/p5_thumb.PNG" alt="Image 1"></button></li>
+                <li><button class="myBtn"><img src="images/thumbnails/indy_thumb.png" alt="Image 1"></button></li>
+            </ul>
+        </div>
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+        <p class="jcarousel-pagination"></p>
+    </div>
+</div> 
 
+<br/>
 <hr/>
+
+
 
 <h1>Other projects</h1>
 <p class="center">Here are some games I made at game jams and developed in my free time:</p>
 
-<div class="responsive">
-<div class="gallery">
-  <button class="myBtn">
-      <img src="images/thumbnails/rollerBoy_thumb.PNG" alt="rollerboy" width="900" height="600">
-    <div class="desc">RollerBoy</div>
-  </button>
-</div>
-</div>
+ <div class="wrapper">
 
-<div class="responsive">
-  <div class="gallery">
-    <button class="myBtn">
-        <img src="images/thumbnails/placeholder_thumb.png" alt="untitled ngj22" width="900" height="600">
-      <div class="desc">Untitled NGJ22 project</div>
-    </button>
+  <div class="jcarousel-wrapper">
+      <div class="jcarousel">
+          <ul>
+              <li><button class="myBtn"><img src="images/thumbnails/rollerBoy_thumb.PNG" alt="Image 1"></button></li>
+                <li><button class="myBtn"><img src="images/thumbnails/placeholder_thumb.png" alt="Image 2"></button></li>
+                <li><button class="myBtn"><img src="images/thumbnails/candyShoot_thumb.PNG" alt="Image 3"></button></li>
+                <li><button class="myBtn"><img src="images/thumbnails/starTours_thumb.png" alt="Image 4"></button></li>
+                <li><button class="myBtn"><img src="images/thumbnails/chadGame_thumb.png" alt="Image 5"></button></li>
+                <li><button class="myBtn"><img src="images/thumbnails/turboCow_thumb.png" alt="Image 6"></button></li>
+          </ul>
+      </div>
+      <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+      <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+      <p class="jcarousel-pagination"></p>
   </div>
-  </div>
+</div> 
 
-<div class="responsive">
-<div class="gallery">
-  <button class="myBtn">
-      <img src="images/thumbnails/candyShoot_thumb.PNG" alt="candy shoot" width="900" height="600">
-    <div class="desc">Candy Shoot</div>
-  </button>
-</div>
-</div>
 
-<!-- once again change this -->
-<p class="invisible">hello</p>
+<br/>
+<hr/>
 
-<div class="responsive">
-<div class="gallery">
-  <button class="myBtn">
-      <img src="images/thumbnails/starTours_thumb.png" alt="star tours 1992 vr" width="900" height="600">
-    <div class="desc">Star Tours 1992 VR</div>
-  </button>
-</div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <button class="myBtn">
-        <img src="images/thumbnails/chadGame_thumb.png" alt="chad game" width="900" height="600">
-      <div class="desc">Chad Game</div>
-    </button>
-  </div>
-  </div>
-
-<div class="responsive">
-<div class="gallery">
-  <button class="myBtn">
-      <img src="images/thumbnails/turboCow_thumb.png" alt="turbo cow" width="900" height="600">
-    <div class="desc">Turbo Cow</div>
-  </button>
-</div>
-</div>
-
-<hr/> 
 
 <p class="center">&copy FDL Games 2022</p>
 
@@ -161,8 +101,8 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Chipping Into Society (2019)</h2>
-    <iframe width="800" height="450" src="https://www.youtube.com/embed/UEYpVFQbumc"></iframe>
-      <p>  This was my semester project on the first semester of medialogy.
+    <p><iframe class="youTube"  src="https://www.youtube.com/embed/UEYpVFQbumc"></iframe>
+      This was my semester project on the first semester of medialogy.
       The project was about microchipping and how this techology might
       become relevant in the future and that it would therefore be a good 
       idea to research the attitudes of the public regarding the injection
@@ -192,7 +132,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>A Brief History of Air Pollution (2020)</h2>
-    <p><iframe width="800" height="450" src="https://www.youtube.com/embed/_cJxkFBQUKc"></iframe>
+    <p><iframe class="youTube" width="800" height="450" src="https://www.youtube.com/embed/_cJxkFBQUKc"></iframe>
     This prototype was created as a part of my second semester project at medialogy. 
     This was the first project at university that I worked on where we utilzed the 
     Unity Engine. This was an engine i had experience with before, so this meant that i 
@@ -221,7 +161,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>D&D using Image Processing (2020)</h2>
-    <p><iframe width="800" height="450" src="https://www.youtube.com/embed/H6TnSHjdOZY"></iframe>
+    <p><iframe class="youTube" width="800" height="450" src="https://www.youtube.com/embed/H6TnSHjdOZY"></iframe>
       This was the project developed on my third semester studing mediology. 
       The inspiration for the project came form Dungeons and Dragons and desire to
       mkae the setting up of a game signicanly easier. During this semester there
@@ -253,7 +193,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Making a Museum Alive (2021)</h2>
-    <p><iframe width="800" height="450" src="https://www.youtube.com/embed/WnhKPBkXxqM"></iframe>
+    <p><iframe class="youTube" width="800" height="450" src="https://www.youtube.com/embed/WnhKPBkXxqM"></iframe>
       For my fourth semester project on AAU studing mediology, the main focus was on
       sound and music and we decied to utilaze AR technolgy as well. The aim of the
       project and prototype was to develop an application for the Danish Music Museum,
@@ -281,7 +221,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Chiseling The Story: Adaptive Storytelling</h2>
-    <p><img class="right" width="800" height="450" src="images/portfolioImages/greek.PNG" alt="p5" width="800" height="450">
+    <p><img  width="800" height="450" src="images/portfolioImages/greek.PNG" alt="p5" width="800" height="450">
       On my fifth semester studing medialogy, the focus of the semester was maily on 
       visuals ans shaders, so this was a project where a lot of effort was put into 
       the creation of 3D models. This was also the first semester project where a regular
@@ -313,7 +253,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Dwaynedyana Jones and the Damn Snake</h2>
-    <p><img class="right" width="800" height="450" src="images/portfolioImages/indy.png" alt="p5" width="800" height="450">
+    <p><img  width="800" height="450" src="images/portfolioImages/indy.png" alt="p5" width="800" height="450">
       This was an animation that was created as a part of a mini project on a
       course call Rendering and Animation Techniques on my fifth semster studing
       medialogy. The animation had to fulfil certain requirements, like featung a rigged
@@ -342,7 +282,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>RollerBoy (2023)</h2>
-    <p><img class="right" src="rollerboy.html" alt="roller" width="800" height="450">
+    <p><img  src="images/portfolioImages/final3.PNG" alt="roller" width="800" height="450">
       I started developing this game when i was still studing at university, but I had to 
       wait untill i finished my degree to have time to complete the game. During develipment, the
       core gamelay of the game have changed quite a lot at the future plans for development are very differnt
@@ -368,7 +308,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>NGJ22 game (2022)</h2>
-    <p><img class="right" src="images/portfolioImages/placeholder.png" alt="roller" width="800" height="450">
+    <p><img  src="images/portfolioImages/placeholder.png" alt="roller" width="800" height="450">
       This was my semester project on the first semester of meidalogy.
       The project was about microchipping and how this techology might
       become relevant in the future and that it would therefore be a good 
@@ -399,7 +339,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Candy Shoot (2021)</h2>
-    <p><iframe width="800" height="450" src="https://www.youtube.com/embed/Xs41Dxso4k0"></iframe>
+    <p><iframe class="youTube" width="800" height="450" src="https://www.youtube.com/embed/Xs41Dxso4k0"></iframe>
       This game was developed by me and a friend at a halloween game jam a AAU CPH in 2021. 
       The aim of the game was simple to make a fun halloween inspired shooter with lots of
       candy. The game was placed third in the category of Fun to Play, wihch was also the category
@@ -428,7 +368,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Star Tours 1987 VR (2021)</h2>
-    <p><img class="right" src="images/portfolioImages/star tours.PNG" alt="star tours" width="800" height="450">
+    <p><img  src="images/portfolioImages/star tours.PNG" alt="star tours" width="800" height="450">
      DISCLAIMER: This is a Fan Project that will never be released due to copyright reasons. </p>
 
     <p>This is a Star Wars/Disneyland inspired fan projetct that a spent some itme working on due
@@ -460,7 +400,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Chad Game (2021)</h2>
-    <p><img class="right" src="images/portfolioImages/chad1.png" alt="chad game" width="800" height="450">
+    <p><img  src="images/portfolioImages/chad1.png" alt="chad game" width="800" height="450">
       This game was made at a small online game jam that functioned as a test for possible 
       bigger game jams at AAU. I worked on this game with one of my firend and it was made 
       in less than 48 hours.</p>
@@ -487,7 +427,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Turbo Cow (2018)</h2>
-    <p><iframe width="800" height="450" src="https://www.youtube.com/embed/1NarQksEx0M"></iframe>
+    <p><iframe class="youTube" width="800" height="450" src="https://www.youtube.com/embed/1NarQksEx0M"></iframe>
       I attended a game jam at Vallekilde Højskole() in Holbæk in 2018 with some friends. We
       did not reasise unitl we got there that almost all attendants were professional game developers,
       which meant that we got to see the working progress of differnt indie game while we worked on our own game.
@@ -519,6 +459,7 @@
 </div>
 
 <script src="myScript.js"></script>
+
 
 </body>
 </html>

@@ -9,9 +9,7 @@ html {
 
 ul {
   color: rgba(255,255,255,0.8);;
-
   list-style: none;
-  
 }
 
 .webgl-content {
@@ -21,7 +19,6 @@ ul {
   overflow: hidden;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
 }
-
 
 .responsive-unity {
   position: absolute;
@@ -40,23 +37,18 @@ li {
   font-size: 26px;
   padding: 14px 16px;
   text-decoration: none;
-  
 }
 
 a { 
- 
+
   color: aqua;
 }
 
 li a {
-  
   color: white;
-
   padding: 14px 16px;
   text-decoration: none;
 }
-
-
 
 li a:hover:not(.active) {
   background-color: rgba(255,255,255,0.4);;
@@ -79,7 +71,6 @@ hr{
   margin-bottom: 2%;
   margin-right: 20%;
   margin-left: 20%;
-  /* border: 0px solid #777; */
   clear: both;
 }
 
@@ -91,23 +82,6 @@ hr{
   margin-left: 22%;
 }
 
-div.gallery {
-
-  border: 1px solid #ccc;
-  background-color: rgba(0,0,0,0.7);;
- 
-  margin-top: 8%;
-  margin-bottom: 8%;
-  margin-right: 7%;
-  margin-left: 7%;
-  
-  
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -115,20 +89,14 @@ div.gallery:hover {
 img.left{
   float: left;
   margin-right: 30px;
-  margin-left: 30px;
+  margin-top: 8px;
+  /* margin-left: 30px; */
 }
 
 img.right{
   float: right;
   margin-right: 30px;
   margin-left: 30px;
-}
-
-
-div.gallery img { 
-  width: 100%;
-  height: 20%;
- 
 }
 
 div.desc {
@@ -162,13 +130,9 @@ h1
   {
     margin-top: 2%;
     margin-bottom: 4%;
-
     font-family: Arial, Helvetica, sans-serif;
-
     color: white;
-
     text-align: center;
-
     font-size: 62px;
   }
 
@@ -179,7 +143,6 @@ p
     font-size: 20px;
     text-align: left;
     line-height: 1.6;
-
   }
 
   p.invisible
@@ -201,38 +164,16 @@ p
     line-height: 1.6;
 
   }
- 
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 33%;
-  }
-
-
-
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 60px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
 
   /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  position:fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
+  padding-bottom: 100px;
+  padding-left: 26%;
+  padding-right: 25%;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -240,22 +181,20 @@ p
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  float: center;
+  /* float: center; */
 }
 
 /* Modal Content */
 .modal-content {
   background-color: rgba(0,0,0,0.8);;
-  
-  padding: 20px;
+  padding: 20px; 
   border: 1px solid #888;
-  width: 50%;
+  width: 100%;
 }
 
 .modal-content p {
 font-size: 20px;
 text-align: left;
-
   margin-right: 4%;
   margin-left: 4%;
 }
@@ -267,8 +206,6 @@ text-align: left;
   font-weight: bold;
 }
 
-
-
 .close:hover,
 .close:focus {
   color: #000;
@@ -276,9 +213,23 @@ text-align: left;
   cursor: pointer;
 }
 
-iframe{
+iframe.p5{
   float: center; 
-  margin-left:40px;
-  margin-bottom:40px;
-  margin-top:12px;
+border: none;
+}
+
+iframe.youTube{
+  float: center; 
+border: none;
+padding-bottom: 25px;
+position: relative;
+width: 100%;
+height: 56.25%;
+}
+
+  button {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
 }
