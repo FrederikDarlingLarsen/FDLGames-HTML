@@ -93,6 +93,12 @@ hr{
   box-sizing: border-box;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
 img.left{
   float: left;
   margin-right: 30px;
@@ -106,6 +112,11 @@ img.right{
   margin-left: 30px;
 }
 
+
+img.portfolio{
+
+  padding-bottom: 25px;
+}
 
 
 .clearfix:after {
