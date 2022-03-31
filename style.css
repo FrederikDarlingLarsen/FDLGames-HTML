@@ -19,12 +19,23 @@ ul {
   list-style: none;
 }
 
-.webgl-content {
+.container {
   border: solid 1px #ccc;
   position: relative; 
   width: 100%;
   overflow: hidden;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
+
+}
+
+.container43 {
+  border: solid 1px #ccc; 
+  position: relative; 
+  width: 100%;
+  overflow: hidden;
+  padding-top: 75%; /* 16:9 Aspect Ratio */
+  overflow-y: auto;
+            overflow-x: hidden;
 }
 
 .responsive-unity {
@@ -36,6 +47,29 @@ ul {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+iframe.p5{
+  
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+ padding: 0;
+ margin: 0;
+}
+
+iframe.youTube{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  
+ 
 }
 
 
@@ -199,7 +233,7 @@ p
 /* Modal Content */
 .modal-content {
   background-color: rgba(0,0,0,0.8);;
-  padding: 20px; 
+  padding: 40px; 
   border: 1px solid #888;
   width: 100%;
 }
@@ -207,8 +241,7 @@ p
 .modal-content p {
 font-size: 20px;
 text-align: left;
-  margin-right: 4%;
-  margin-left: 4%;
+
 }
 /* The Close Button */
 .close {
@@ -225,19 +258,7 @@ text-align: left;
   cursor: pointer;
 }
 
-iframe.p5{
-  float: center; 
-border: none;
-}
 
-iframe.youTube{
-  float: center; 
-border: none;
-padding-bottom: 25px;
-position: relative;
-width: 100%;
-height: 56.25%;
-}
 
   button {
     display: inline-block;
