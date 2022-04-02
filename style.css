@@ -57,6 +57,7 @@ iframe.p5{
   right: 0;
  padding: 0;
  margin: 0;
+ border: none;
 }
 
 iframe.youTube{
@@ -147,15 +148,24 @@ hr{
 }
 img.left{
   float: left;
-  margin-right: 30px;
-  margin-top: 8px;
-  /* margin-left: 30px; */
+  /* margin-right: 30px; */
+  /* margin-top: 8px; */
+  /* margin-left: 30px;  */
+  padding-bottom: 20px;
+}
+
+img.leftMargin{
+  float: left;
+  margin-right: 30px; 
+  /* margin-top: 8px; */
+  /* margin-left: 30px;  */
 }
 
 img.right{
   float: right;
-  margin-right: 30px;
-  margin-left: 30px;
+  /* margin-right: 30px; */
+  /* margin-left: 30px; */
+  padding-bottom: 20px;
 }
 
 
@@ -188,7 +198,7 @@ h1
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
-    font-size: 62px;
+    font-size: 52px;
   }
 
 p 
@@ -218,6 +228,23 @@ p
     text-align: center;
     line-height: 1.6;
 
+  }
+
+
+  p.left{
+    float: left;
+margin-right: 55%;
+width: 45%;
+
+
+  }
+
+  p.right{
+    
+    margin-left: 55%;
+    width: 45%;
+
+  
   }
 
   /* The Modal (background) */

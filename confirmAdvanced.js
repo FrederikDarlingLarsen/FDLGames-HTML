@@ -1,8 +1,7 @@
-
 $(document).ready(function(){			
    // $('a.basic').confirmMailto();
     $('a.advanced').confirmMailto({
-        message: 	'Are you cool enough to send an email to $to? ',
+        message: 	'Are you brave enough to send an email to $to? ',
         to: 		'html',
         success: 	function(){
                         $('a.advanced').css('color','#3C3');
@@ -12,10 +11,13 @@ $(document).ready(function(){
                     },
         callback: 	function(result){
                         if(result){
-                            alert('Thank you!');
+                            alert('You are a brave humanoid!');
                         }else{
-                            alert('Boooo!');
+                            alert('And i thought you were brave...');
                         }
                     }
     });
 });
+
+
+
