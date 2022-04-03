@@ -32,7 +32,7 @@ function createBat() {
   rectMode(CORNER);
 }
 
-function createBatCPU() {
+function createBat2() {
 
   stroke(200);
   fill(255);
@@ -54,7 +54,6 @@ function createBatCPU() {
 }
 
 function createBall() {
-
   fill(255);
   ellipse(positionx, positiony, size, size);
 
@@ -63,17 +62,19 @@ function createBall() {
 
   if (positiony > 600-size/2) {
     Yspeed = -Yspeed;
-  } else if (positiony < 80+size/2) {
+  } 
+  else if (positiony < 80+size/2) {
     Yspeed = -Yspeed;
-  } else if (positionx > 800-50-size/2 && positiony < mouseX+batLength/2 && positiony > mouseX-batLength/2)
-  {
-  Xspeed = -Xspeed;
+  } 
+  else if (positionx > 800-50-size/2 && 
+           positiony < mouseX+batLength/2 && 
+           positiony > mouseX-batLength/2){
+    Xspeed = -Xspeed;
     score++;
   }
-  
-  
-             else if(positionx < 50+thickness-size/2 && positiony < mouseY+batLength/2 && positiony > mouseY-batLength/2) {
-
+  else if(positionx < 50+thickness-size/2 && 
+          positiony < mouseY+batLength/2 && 
+          positiony > mouseY-batLength/2) {
     Xspeed = -Xspeed;
     score++;
   }
@@ -86,25 +87,21 @@ function setup() {
 }
 
 function draw() {
-
   background(0);
-
   stroke(255, 255, 255);
   fill(0, 0, 0);
   rect(0, 0, 800, 80);
   fill(255, 255, 255);
   textSize(36);
   text("Score: " + score, 20, 53);
-
   textSize(48);
   text("AXIS PONG", 260, 58);
-
   textSize(36);
   text("Lives: " + lives, 650, 53);
 
   createBall();
   createBat();
-  createBatCPU();
+  createBat2();
 
   if (lost) {
     lives--;
@@ -118,7 +115,6 @@ function draw() {
   }
 
   if(lives <= 0) {
-
     textSize(60);
     text("GAME OVER", 205, 300);
     textSize(18);
