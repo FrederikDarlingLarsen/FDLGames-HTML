@@ -61,9 +61,9 @@ btn[12].onclick = function() {
   modal[12].style.display = "block";
   }
 
-  btn[13].onclick = function() {
-    modal[13].style.display = "block";
-    }
+  // btn[13].onclick = function() {
+  //   modal[13].style.display = "block";
+  //   }
 
 // When the user clicks on <span> (x), close the modal
 span[0].onclick = function() {
@@ -118,9 +118,9 @@ span[12].onclick = function() {
   modal[12].style.display = "none";
   }
 
-  span[13].onclick = function() {
-    modal[13].style.display = "none";
-    }
+  // span[13].onclick = function() {
+  //   modal[13].style.display = "none";
+  //   }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -165,7 +165,7 @@ modal[11].style.display = "none";
 if (event.target == modal[12]) {
   modal[12].style.display = "none";
   } 
-  if (event.target == modal[13]) {
-    modal[13].style.display = "none";
-    } 
+  // if (event.target == modal[13]) {
+  //   modal[13].style.display = "none";
+  //   } 
 }
