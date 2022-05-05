@@ -115,7 +115,12 @@ li a.active {
   color: black;
 }
 
+.logo{
+  margin-top: 16px;
+}
+
 .center {
+  
   text-align: center;
   clear: right;
 }
