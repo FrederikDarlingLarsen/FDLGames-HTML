@@ -1,3 +1,4 @@
+// Variables
 var positionx = 400;
 var positiony = 200;
 var size = 20;
@@ -11,12 +12,15 @@ var lives = 3;
 var batLength = 150;
 var thickness = 20;
 
+// Function for creating the bat
 function createBat() {
 
+  // Color and centering
   stroke(200);
   fill(255);
   rectMode(CENTER);
 
+  // If-statements using mouseX and mouseY for moving the bat
   if (mouseY <800-batLength/2 && mouseY > batLength/2+80) {
     rect(50, mouseY, thickness, batLength);
   }
@@ -29,15 +33,19 @@ function createBat() {
     rect(50, batLength/2+80, thickness, batLength);
   }
 
+  // Set rect() back to drawing from the corner
   rectMode(CORNER);
 }
 
+// Function for creating the other bat
 function createBat2() {
 
+  // Color and centering
   stroke(200);
   fill(255);
   rectMode(CENTER);
-
+  
+  // If-statements using mouseX and mouseY for moving the bat
   if (mouseX <800-batLength/2 && mouseX > batLength/2+80) {
     rect(750, mouseX, thickness, batLength);
   }
@@ -49,17 +57,24 @@ function createBat2() {
   if (mouseX < batLength/2+80) {
     rect(750, batLength/2+80, thickness, batLength);
   }
-
+  
+  // Set rect() back to drawing from the corner
   rectMode(CORNER);
 }
 
+// Function for creating the ball
 function createBall() {
+
+  // Drawing the ellipse with white fill
   fill(255);
   ellipse(positionx, positiony, size, size);
 
+  // Adding the speeds to the position coordinates
   positionx += Xspeed;
   positiony += Yspeed;
 
+
+  // If-statements for changing the position of the ball when hitting a wall or bat
   if (positiony > 600-size/2) {
     Yspeed = -Yspeed;
   } 
@@ -80,7 +95,6 @@ function createBall() {
   }
 }
 
-let block;
 
 function setup() {
   createCanvas(800, 600);

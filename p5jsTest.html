@@ -6,6 +6,11 @@
 </head>
 
 <body>
+
+  <!-- The div element for implementation of Vide -->
+  <div class ="wrapper" data-vide-bg="images/template/bgTest.mp4">
+
+  <!-- The centered unordered list for the menu -->
     <div class="center">
         <img class ="logo" src="images/template/fdl.PNG" alt="FDL Games logo"   width="300" height="150">
         <ul class="nav">
@@ -30,11 +35,19 @@
      lost. If all lives are lost it is "Game Over".
    </p>
 
+  <!-- The iframe featuring my p5.js game from the p5jsSource.html -->
 <p class="center"><iframe class ="p5" src="p5jsSource.html" 
 title="p5.js test!"  height="616" width="816"></iframe></p>
 
 <p class="center">&copy FDL Games 2022</p>
 </div>
+</div>
+
+<!-- import JQuery -->
+<script src="libraries/jquery-3.6.0.min.js"></script>
+<!-- Import Vide -->
+<script src="libraries/jquery.vide.js"></script> 
+
 
 </body>
 </html>
