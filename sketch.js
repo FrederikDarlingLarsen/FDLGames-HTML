@@ -85,22 +85,26 @@ function createBall() {
            positiony < mouseX+batLength/2 && 
            positiony > mouseX-batLength/2){
     Xspeed = -Xspeed;
+    // Point added to score
     score++;
   }
   else if(positionx < 50+thickness-size/2 && 
           positiony < mouseY+batLength/2 && 
           positiony > mouseY-batLength/2) {
     Xspeed = -Xspeed;
+    // Point added to score
     score++;
   }
 }
 
-
+// Setup function where a canvas of size 800x600 is created.
 function setup() {
   createCanvas(800, 600);
 }
 
+// The draw function which is called once a frame.
 function draw() {
+  // Creates the background and the scoreboard.
   background(0);
   stroke(255, 255, 255);
   fill(0, 0, 0);
@@ -113,10 +117,12 @@ function draw() {
   textSize(36);
   text("Lives: " + lives, 650, 53);
 
+  // Creates the ball and the two bats.
   createBall();
   createBat();
   createBat2();
 
+  // If the ball is lost, a life is lost and the position is reset.
   if (lost) {
     lives--;
     positionx = 300;
@@ -124,10 +130,12 @@ function draw() {
     lost=false;
   }
 
+  // If the ball is out of bounds it is lost and the boolean lost i set to true.
   if (positionx > 800 || positionx < 0) {
     lost = true;
   }
 
+  // If no lives are left show the game over text and set the speed of the ball to 0.
   if(lives <= 0) {
     textSize(60);
     text("GAME OVER", 205, 300);
@@ -138,6 +146,7 @@ function draw() {
   }
 }
 
+// Is called when any key is pressed. Resets the variables for the game after a game over.
 function keyPressed() {
   if (lives <= 0) {
     lives = 3;
